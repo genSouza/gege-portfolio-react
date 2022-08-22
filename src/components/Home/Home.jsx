@@ -24,10 +24,10 @@ const Home = () => {
             Oracle 11g, PostgreSQL, MongoDB
           </p>
           <div>
-            <button>
+            <button className="flex items-center px-6 py-3 my-2 rounded-md cursor-pointer group w-fit bg-gradient-to-r from-cyan-500 to-blue-500">
               Portfolio
-              <span>
-                <MdOutlineKeyboardArrowRight />
+              <span className="duration-300 group-hover:rotate-90">
+                <MdOutlineKeyboardArrowRight size={25} className="ml-1"/>
               </span>
             </button>
           </div>
