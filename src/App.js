@@ -1,9 +1,11 @@
-import NavBar from "./components/navbar/NavBar.tsx"
+import Home from "./components/Home/Home.tsx";
+import NavBar from "./components/Navbar/NavBar.tsx";
 
 function App() {
   return (
     <div>
       <NavBar />
+      <Home />
     </div>
   );
 }
