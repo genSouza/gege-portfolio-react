@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImage from "../../assets/heroImage.jpg";
+import HeroImage from "../../assets/heroImage.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 var Scroll = require("react-scroll");
 var Element = Scroll.Element;
