@@ -7,9 +7,7 @@ import nextjs from "../../assets/nextjs.png";
 import graphql from "../../assets/graphql.png";
 import github from "../../assets/github.png";
 import tailwind from "../../assets/tailwind.png";
-var Scroll = require("react-scroll");
-var Element = Scroll.Element;
-var scroller = Scroll.scroller;
+
 
 const Experience = () => {
   const techs = [
@@ -23,9 +21,9 @@ const Experience = () => {
     { id: 8, src: github, title: "GitHub", style: "shadow-gray-400" },
   ];
   return (
-    <Element
+    <div
       name="experience"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black"
+      className="w-full sm:h-screen bg-gradient-to-b from-gray-800 to-black p-4"
     >
       <div className="flex flex-col justify-center w-full h-full max-w-screen-lg p-4 mx-auto text-white">
         <div>
@@ -47,7 +45,7 @@ const Experience = () => {
           ))}
         </div>
       </div>
-    </Element>
+    </div>
   );
 };
 

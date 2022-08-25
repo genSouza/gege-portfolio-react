@@ -11,7 +11,7 @@ const SocialLinks = () => {
           Linkedin <FaLinkedin size={30} />
         </>
       ),
-      href: "https://www.linkedin.com/genilton-silva-de-souza/",
+      href: "https://www.linkedin.com/in/genilton-silva-de-souza",
       style: "rounded-tr-md",
     },
     {

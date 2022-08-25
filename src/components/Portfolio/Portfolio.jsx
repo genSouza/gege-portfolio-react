@@ -6,10 +6,6 @@ import reactParallax from "../../assets/portfolio/reactParallax.jpg";
 import reactSmooth from "../../assets/portfolio/reactSmooth.jpg";
 import reactWeather from "../../assets/portfolio/reactWeather.jpg";
 
-var Scroll = require("react-scroll");
-var Element = Scroll.Element;
-var scroller = Scroll.scroller;
-
 const Portfolio = () => {
   const portfolios = [
     {
@@ -39,7 +35,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <Element
+    <div
       name="portfolio"
       className="w-full text-white bg-gradient-to-b from-black to-gray-800 md:h-screen"
     >
@@ -71,7 +67,7 @@ const Portfolio = () => {
           ))}
         </div>
       </div>
-    </Element>
+    </div>
   );
 };
 
