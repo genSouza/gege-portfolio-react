@@ -1,15 +1,16 @@
 import React from "react";
 import HeroImage from "../../assets/heroImage.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
     <div
       name="home"
-      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
+      className="w-full h-screen bg-gradient-to-b from-black via-black to-gray-800"
     >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
-        <div className="flex flex-col justify-center h-full text-white mt-20 sm:mt-0">
+      <div className="flex flex-col items-center justify-center h-full max-w-screen-lg px-4 mx-auto md:flex-row">
+        <div className="flex flex-col justify-center h-full mt-20 text-white sm:mt-0">
           <h2 className="text-4xl">
             Hi everyone, my name is Genilton Souza and i'm a software engineer .
           </h2>
@@ -21,19 +22,24 @@ const Home = () => {
             Oracle 11g, PostgreSQL, MongoDB
           </p>
           <div>
-            <button className="flex items-center px-6 py-3 my-2 rounded-md cursor-pointer group w-fit bg-gradient-to-r from-cyan-500 to-blue-500">
+            <Link
+              to="portfolio"
+              smooth
+              duration={500}
+              className="flex items-center px-6 py-3 my-2 rounded-md cursor-pointer group w-fit bg-gradient-to-r from-cyan-500 to-blue-500"
+            >
               Portfolio
               <span className="duration-300 group-hover:rotate-90">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
               </span>
-            </button>
+            </Link>
           </div>
         </div>
         <div>
           <img
             src={HeroImage}
             alt="GeGe profile"
-            className="w-2/3 mx-auto rounded-2xl md:w-full mb-2 sm:mb-0"
+            className="w-2/3 mx-auto mb-2 rounded-2xl md:w-full sm:mb-0"
           />
         </div>
       </div>
